@@ -4,6 +4,9 @@ Android屏端模拟Wifi模块与MCU通讯
 该sdk实现Android屏端模拟wifi模组发送iot命令到mcu的功能，和经典的屏端到mcu通过字节格式发送串口数据不一样，该方法使mcu对接Android屏和普通的led屏一样，不用做两套代码，冰箱屏端串口协议统一。
 
 
+引入：
+implementation 'com.viomi.iotserial:iot_serial_lib:1.0.1'
+
 1、配置数据上报handler
 
 
