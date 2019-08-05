@@ -10,7 +10,7 @@
     <dependency>
       <groupId>androidx.appcompat</groupId>
       <artifactId>appcompat</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
