@@ -2,6 +2,8 @@
 Android屏端模拟Wifi模块与MCU通讯
 
 
+
+
 1、配置数据上报handler
         SerialConvert.getInstance().setHandler(new CmdHandler() {
             @Override
