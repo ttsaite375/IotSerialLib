@@ -99,35 +99,9 @@ implementation 'com.viomi.iotserial:iot_serial_lib:1.0.1'
             }
         });
         
-        6、获取model
-          SerialConvert.getInstance().getModel(new ExpandCallback<String>() {
-            @Override
-            public void onResult(int code, @NonNull String value, String msg) {
-                if(code==0){
-                    Log.i(TAG,"getModel success，model ="+value);
-                    Toast.makeText(MainActivity.this, "设备model："+value, Toast.LENGTH_SHORT).show();
-                }else {
-                    Log.i(TAG,"getModel fail，msg ="+msg);
-                    Toast.makeText(MainActivity.this, "获取model失败", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+       
         
-        7、获取mcu版本
-                SerialConvert.getInstance().getMcuVersion(new ExpandCallback<Integer>() {
-            @Override
-            public void onResult(int code, @NonNull Integer value, String msg) {
-                if(code==0){
-                    Log.i(TAG,"geMcuVersion success，version ="+value);
-                    Toast.makeText(MainActivity.this, "设备mcu version："+value, Toast.LENGTH_SHORT).show();
-                }else {
-                    Log.i(TAG,"geMcuVersion fail，msg ="+msg);
-                    Toast.makeText(MainActivity.this, "获取mcu版本失败", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        
-        8、固件ota升级
+        6、固件ota升级
              try {
             SerialConvert.getInstance().otaStart("/sdcard/mcu/ota.bin", new ProgressCallback() {
                 @Override
@@ -148,5 +122,5 @@ implementation 'com.viomi.iotserial:iot_serial_lib:1.0.1'
             Toast.makeText(MainActivity.this, "ota 异常", Toast.LENGTH_SHORT).show();
         }
         
-        9、关闭服务
+        7、关闭服务
         SerialConvert.getInstance().close();
