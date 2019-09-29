@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.viomi.iotserial</groupId>
   <artifactId>iot_serial_lib</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.8</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
